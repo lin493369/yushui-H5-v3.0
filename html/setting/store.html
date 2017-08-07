@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>提问</title>
+    <link rel="stylesheet" type="text/css" href="../../css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/setting/store.css" />
+</head>
+
+<body>
+    <div id="store">
+        <header>
+            <span class="back"><i></i></span>
+            <div>我的收藏</div>
+        </header>
+        <div class="content">
+            <ul>
+              <li>
+                  <div class="left fl">
+                      <div class="title">申报最后一天~对照自查</div>
+                      <div class="desc clear">
+                          <span class="fl fs12">中小企业财税</span>
+                          <span class="fr fs12"><i class="good"></i>0</span>
+                          <span class="fr fs12"><i class="look"></i>3k</span>
+                      </div>
+                  </div>
+                  <div class="right fr"><img src="../../image/news.jpg" alt=""></div>
+              </li>
+              <li>
+                  <div class="left fl">
+                      <div class="title">申报最后一天~对照自查</div>
+                      <div class="desc clear">
+                          <span class="fl fs12">中小企业财税</span>
+                          <span class="fr fs12"><i class="good"></i>0</span>
+                          <span class="fr fs12"><i class="look"></i>3k</span>
+                      </div>
+                  </div>
+                  <div class="right fr"><img src="../../image/news.jpg" alt=""></div>
+              </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="../../script/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $('header .back').click(function(){
+        window.history.go(-1);
+      });
+        $('#store .content li').each(function(){
+          $(this).on('click',function(){
+            window.location.href = '../home/newDetail.html';
+          })
+        })
+      })
+    </script>
+</body>
+
+</html>
