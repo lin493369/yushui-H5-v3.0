@@ -76,12 +76,12 @@
         });
         $('#question .tab span').each(function(i){
           var j = 'a' + i;
-          $('#question .content .show').css('height', $('.' + j).outerHeight());
           $(this).on('click', function() {
               $('.move').animate({
                   left: -$(document.body).width() * i
               });
               $("#question .tab span").eq($(this).index()).addClass("active2").siblings().removeClass("active2");
+              $('#question .content .show').css('height', $('.' + j).outerHeight());
           });
         });
         $('#question .a0 .video').each(function(){
