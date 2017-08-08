@@ -24,6 +24,8 @@
 #login ul li i.set{background-image: url(../icon/shezhi.png)}
 #login ul li i.advice{background-image: url(../icon/advice.png)}
 #login ul li i.activity{background-image: url(../icon/activity.png)}
+#login ul li i.num{background-image: url(../icon/qiandao.png)}
+#login ul li i.card{background-image: url(../icon/youhuiquan.png)}
 
 
 #loginDetail header{height: 50px;line-height: 50px;border-bottom: 1px solid #efefef;position: relative;}

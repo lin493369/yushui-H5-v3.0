@@ -33,24 +33,19 @@
           <span>立即登录</span>
         </div>
       </div>
-      <div class="count">
-        <div class="num">
-          <div class="count-pic"><img src="icon/jifen.png"></div>
-          <div class="count-info">
-            <p class="fs16">我的积分:<span>600</span></p>
-            <p class="">签到获取积分</p>
-            <p class="fs16 orange">点击签到</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="count-pic"><img src="icon/youhuiquan.png"></div>
-          <div class="count-info">
-            <p class="fs16">我的优惠券:<span>3</span></p>
-            <p class="">参与抽奖获取优惠券</p>
-            <p class="fs16 orange">查看我的优惠券</p>
-          </div>
-        </div>
-      </div>
+      <ul class="a0">
+        <li class="num">
+          <i class="num"></i>
+          <span>我的积分</span>
+          <span class="fr icon"></span>
+          <span class="fr fs18 num">2</span>
+        </li>
+        <li class="card">
+          <i class="card"></i>
+          <span>我的优惠券</span>
+          <span class="fr icon"></span>
+        </li>
+      </ul>
       <ul class="a1">
         <li class="activity">
           <i class="activity"></i>
@@ -143,10 +138,10 @@
         $('.pic .logo').click(function(){
           window.location.href = 'html/mine/login.html';
         });
-        $('.count .num').click(function(){
+        $('.a0 .num').click(function(){
           window.location.href = 'html/setting/daily.html';
         });
-        $('.count .card').click(function(){
+        $('.a0 .card').click(function(){
           window.location.href = 'html/setting/coupon.html';
         });
     })
